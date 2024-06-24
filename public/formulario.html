@@ -1,5 +1,5 @@
 <!-- //arquivo formulario.html-->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 
 <body class="dadosForm">
     <div class="box">
-        <form action="/submit" method="POST">
+        <form action="http://localhost:3000/submit" method="post">
             <fieldset>
                 <legend><b>Participantes</b></legend>
                 <br>
@@ -22,7 +22,7 @@
                 <br><br>
 
                 <div class="inputBox">
-                    <input type="text" name="Turma" id="turma" class="inputUser" required>
+                    <input type="text" name="turma" id="turma" class="inputUser" required>
                     <label for="turma" class="labelInput">Turma</label>
                 </div>  
 
@@ -33,10 +33,8 @@
                 </div>
                 <br><br>            
         
-                
                 <br><br>
-                <input type="submit" name="submit" id="submit" href="index.html">
-            </section>
+                <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
     </div>
