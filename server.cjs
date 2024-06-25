@@ -101,4 +101,6 @@ app.post('/submit', async (req, res) => {
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
+    host: '0.0.0.0'
+    
 });
