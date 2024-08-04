@@ -34,12 +34,12 @@ app.get('/', (req, res) => {
 });
 
 app.post('/submit', async (req, res) => {
-  const { nome, turma, email } = req.body;
+  const { nome, turma, email, hora } = req.body;
 
   try {
     await sql`
       INSERT INTO participantes (nome, turma, email)
-      VALUES (${nome}, ${turma}, ${email})
+      VALUES (${nome}, ${turma}, ${email}, ${hora})
     `;
     // Redirecionar para a página inicial após inserção bem-sucedida
     res.redirect('/');
