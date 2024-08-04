@@ -38,7 +38,7 @@ app.post('/submit', async (req, res) => {
 
   try {
     await sql`
-      INSERT INTO participantes (nome, turma, email)
+      INSERT INTO participantes (nome, turma, email, hora)
       VALUES (${nome}, ${turma}, ${email}, ${hora})
     `;
     // Redirecionar para a página inicial após inserção bem-sucedida
